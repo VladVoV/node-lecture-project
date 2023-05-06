@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #0066cc;
+        }
+
+        .step {
+            font-size: 1.2rem;
+            margin-left: 1.5rem;
+            color: #333;
+        }
+
+        .step:hover {
+            color: #0066cc;
+            cursor: pointer;
+        }
+
+        .sub-step {
+            margin-left: 1.5rem;
+            color: #666;
+        }
+
+        ol {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 2rem;
+        }
+
+        li:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title">{{title}}</h1>
+<ol>
+    <li class="step">{{firstStep}}</li>
+    <li class="step">{{secondStep}}
+        <ol class="sub-step">
+            <li>{{secondStepOne}}</li>
+            <li>{{secondStepTwo}}</li>
+            <li>{{secondStepThree}}</li>
+            <li>{{secondStepFour}}</li>
+        </ol>
+    </li>
+    <li class="step">{{thirdStep}}</li>
+    <li class="step">{{fourthStep}}</li>
+    <li class="step">{{fifthStep}}</li>
+    <li class="step">{{sixthStep}}</li>
+    <li class="step">{{seventhStep}}
+        <ol class="sub-step">
+            <li>{{seventhStepOne}}</li>
+            <li>{{seventhStepTwo}}</li>
+            <li>{{seventhStepThree}}</li>
+            <li>{{seventhStepFour}}</li>
+            <li>{{seventhStepFive}}</li>
+        </ol>
+    </li>
+    <li class="step">{{eighthStep}}</li>
+    <li class="step">{{ninthStep}}</li>
+    <li class="step">{{tenthStep}}</li>
+</ol>
+</body>
+</html>
